@@ -1,0 +1,14 @@
+From: https://www.udemy.com/course/devops-using-vsts-docker-azure/learn/lecture/23899980#announcements
+
+manual for asp.net and C# .net: https://hub.docker.com/_/microsoft-dotnet
+
+Sample dockerfile https://github.com/HoussemDellai/AspNetCore-Docker
+
+Build Image: docker pull mcr.microsoft.com/dotnet/sdk:5.0
+
+Runtime image: docker pull docker pull mcr.microsoft.com/dotnet/aspnet:5.0
+
+docker build -t aspnetcore-docker-image:v1.0 .
+
+docker run -ti -p 5080:80 aspnetcore-docker-image:v1.0
+
